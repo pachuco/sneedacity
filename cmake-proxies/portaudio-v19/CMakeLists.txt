@@ -253,6 +253,7 @@ list( APPEND DEFINES
       $<$<STREQUAL:${${_OPT}use_pa_jack},dynamic>:
          PA_DYNAMIC_JACK=1
       >
+	  PA_ENABLE_DEBUG_OUTPUT
 )
 
 list( APPEND LIBRARIES

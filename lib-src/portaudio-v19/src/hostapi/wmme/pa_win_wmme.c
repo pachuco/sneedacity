@@ -2063,7 +2063,6 @@ static PaError InitializeWaveHeaders( PaWinMmeSingleDirectionHandlesAndBuffers *
                 framesPerHostBuffer * devices[i].channelCount;
         if( bufferBytes < 0 )
         {
-            OutputDebugStringA("!PROBE Pa_GetSampleSize fail");
             result = paInternalError;
             goto error;
         }
